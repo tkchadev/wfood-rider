@@ -13,7 +13,6 @@ const upload = multer(multerConfig.configMulter).fields([
     maxCount: 1,
   },
 ]);
-
 const postRiderUser = (req, res) => {
   upload(req, res, async (error) => {
     if (error) {
